@@ -122,7 +122,7 @@ export class ScraperService {
       // Example: Extract from table rows
       const rows = document.querySelectorAll('table tbody tr');
       
-      rows.forEach((row) => {
+      rows.forEach((row: Element) => {
         const cells = row.querySelectorAll('td');
         if (cells.length >= 5) {
           events.push({
